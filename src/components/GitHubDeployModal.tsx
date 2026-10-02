@@ -94,6 +94,12 @@ git push -u origin main`;
             <div className="flex items-start gap-2.5 text-xs text-neutral-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
               <span>
+                <strong className="text-white">Correção Anti-Tela Branca (Bundle Pré-Compilado Incluso):</strong> o repositório agora inclui o código JavaScript e CSS já compilados em <code className="font-mono">/assets</code> e <code className="font-mono">/docs</code>. Mesmo que o GitHub Pages esteja no modo padrão (<em>Deploy from a branch: main / root</em>), o site carrega imediatamente sem ficar com tela branca!
+              </span>
+            </div>
+            <div className="flex items-start gap-2.5 text-xs text-neutral-300">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <span>
                 <strong className="text-white">Caminhos Relativos (<code className="font-mono">base: './'</code>)</strong> no <code className="font-mono">vite.config.ts</code> para funcionar em qualquer subpasta <code className="font-mono">seu-usuario.github.io/nome-do-repo</code> sem quebrar imagens ou scripts.
               </span>
             </div>

@@ -12,10 +12,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      html, body {
+        background-color: #0A0A0C;
+        color: #F4F4F6;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+      }
+    </style>
   </head>
   <body class="bg-[#0A0A0C] text-[#F4F4F6] antialiased selection:bg-[#FF0033] selection:text-white overflow-x-hidden">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.__loadGitHubPagesFallback = function () {
+        if (window.__ONDATUBE_MOUNTED__ || window.__ONDATUBE_FALLBACK_LOADED__) return;
+        window.__ONDATUBE_FALLBACK_LOADED__ = true;
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './assets/index.css';
+        document.head.appendChild(link);
+
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = './assets/app.js';
+        document.body.appendChild(script);
+      };
+      setTimeout(function () {
+        if (!window.__ONDATUBE_MOUNTED__) {
+          window.__loadGitHubPagesFallback();
+        }
+      }, 450);
+    </script>
+    <script type="module" src="./src/main.tsx" onerror="window.__loadGitHubPagesFallback && window.__loadGitHubPagesFallback()"></script>
   </body>
 </html>
 
