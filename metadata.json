@@ -1,0 +1,6 @@
+{
+  "name": "OndaTube Music",
+  "description": "Plataforma de streaming de música e vídeo no estilo YouTube Music, otimizada para rodar de forma fluida e estática no GitHub Pages com player de áudio/vídeo, equalizador de 5 bandas e playlists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
